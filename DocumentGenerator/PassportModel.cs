@@ -34,7 +34,7 @@ namespace DocumentGenerator
         string _dob= string.Empty;
         string _expDate= string.Empty;
         string _personalNum= string.Empty;
-        string _placeOfBirth= string.Empty; 
+        readonly string _placeOfBirth = string.Empty; 
         CountryCode _nationality;
         SexCode _sex;
 
