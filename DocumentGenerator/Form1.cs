@@ -122,7 +122,6 @@ namespace DocumentGenerator
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-
             txtSurname.Text = !cbkSurname.Checked ? _surNamesList[rnd.Next(_surNamesList.Count)] : txtSurname.Text;
             txtGivenName.Text = !cbkGivenName.Checked ? (_givenNamesList[rnd.Next(_givenNamesList.Count)] + " " + _givenNamesList[rnd.Next(_givenNamesList.Count)]) : txtGivenName.Text;
             cmbIssuer.SelectedIndex = !cbkIssuer.Checked ? rnd.Next(cmbIssuer.Items.Count) : cmbIssuer.SelectedIndex;
