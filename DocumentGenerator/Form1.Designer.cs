@@ -63,10 +63,9 @@
             this.cmbSex = new System.Windows.Forms.ComboBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.tbIndentityCard = new System.Windows.Forms.TabPage();
-            this.tbInfo = new System.Windows.Forms.TabPage();
-            this.btnInstallFont = new System.Windows.Forms.Button();
-            this.lblFontMessage = new System.Windows.Forms.Label();
-            this.rtbMRZ = new System.Windows.Forms.RichTextBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.cbkIdentOptionalTwo = new System.Windows.Forms.CheckBox();
+            this.txtIdentOptionalTwo = new System.Windows.Forms.TextBox();
             this.btnIdentGenerateRandom = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.cbkIdentOptionalOne = new System.Windows.Forms.CheckBox();
@@ -98,10 +97,11 @@
             this.cbkIdentSex = new System.Windows.Forms.CheckBox();
             this.cmbIdentSex = new System.Windows.Forms.ComboBox();
             this.btnIdentGenerate = new System.Windows.Forms.Button();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.cbkIdentOptionalTwo = new System.Windows.Forms.CheckBox();
-            this.txtIdentOptionalTwo = new System.Windows.Forms.TextBox();
+            this.tbInfo = new System.Windows.Forms.TabPage();
             this.lnkLabel = new System.Windows.Forms.LinkLabel();
+            this.btnInstallFont = new System.Windows.Forms.Button();
+            this.lblFontMessage = new System.Windows.Forms.Label();
+            this.rtbMRZ = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -119,7 +119,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tbIndentityCard.SuspendLayout();
-            this.tbInfo.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -130,7 +130,7 @@
             this.groupBox18.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
-            this.groupBox21.SuspendLayout();
+            this.tbInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -188,6 +188,7 @@
             // 
             // btnRandom
             // 
+            this.btnRandom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRandom.Location = new System.Drawing.Point(13, 387);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(278, 23);
@@ -210,6 +211,7 @@
             // cbkPersonalNumber
             // 
             this.cbkPersonalNumber.AutoSize = true;
+            this.cbkPersonalNumber.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkPersonalNumber.Location = new System.Drawing.Point(218, 23);
             this.cbkPersonalNumber.Name = "cbkPersonalNumber";
             this.cbkPersonalNumber.Size = new System.Drawing.Size(15, 14);
@@ -239,6 +241,7 @@
             // cbkDOE
             // 
             this.cbkDOE.AutoSize = true;
+            this.cbkDOE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkDOE.Location = new System.Drawing.Point(257, 25);
             this.cbkDOE.Name = "cbkDOE";
             this.cbkDOE.Size = new System.Drawing.Size(15, 14);
@@ -247,6 +250,7 @@
             // 
             // dtpExpire
             // 
+            this.dtpExpire.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpExpire.Location = new System.Drawing.Point(7, 19);
             this.dtpExpire.Name = "dtpExpire";
             this.dtpExpire.Size = new System.Drawing.Size(244, 20);
@@ -266,6 +270,7 @@
             // cbkPassport
             // 
             this.cbkPassport.AutoSize = true;
+            this.cbkPassport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkPassport.Location = new System.Drawing.Point(220, 23);
             this.cbkPassport.Name = "cbkPassport";
             this.cbkPassport.Size = new System.Drawing.Size(15, 14);
@@ -294,6 +299,7 @@
             // cbkIssuer
             // 
             this.cbkIssuer.AutoSize = true;
+            this.cbkIssuer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIssuer.Location = new System.Drawing.Point(115, 23);
             this.cbkIssuer.Name = "cbkIssuer";
             this.cbkIssuer.Size = new System.Drawing.Size(15, 14);
@@ -302,6 +308,8 @@
             // 
             // cmbIssuer
             // 
+            this.cmbIssuer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbIssuer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIssuer.FormattingEnabled = true;
             this.cmbIssuer.Location = new System.Drawing.Point(6, 19);
             this.cmbIssuer.Name = "cmbIssuer";
@@ -341,6 +349,7 @@
             // cbkDOB
             // 
             this.cbkDOB.AutoSize = true;
+            this.cbkDOB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkDOB.Location = new System.Drawing.Point(257, 25);
             this.cbkDOB.Name = "cbkDOB";
             this.cbkDOB.Size = new System.Drawing.Size(15, 14);
@@ -349,6 +358,7 @@
             // 
             // dtpBirth
             // 
+            this.dtpBirth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpBirth.Location = new System.Drawing.Point(7, 19);
             this.dtpBirth.Name = "dtpBirth";
             this.dtpBirth.Size = new System.Drawing.Size(244, 20);
@@ -368,6 +378,7 @@
             // cbkNationality
             // 
             this.cbkNationality.AutoSize = true;
+            this.cbkNationality.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkNationality.Location = new System.Drawing.Point(115, 22);
             this.cbkNationality.Name = "cbkNationality";
             this.cbkNationality.Size = new System.Drawing.Size(15, 14);
@@ -376,6 +387,8 @@
             // 
             // cmbNationality
             // 
+            this.cmbNationality.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNationality.FormattingEnabled = true;
             this.cmbNationality.Location = new System.Drawing.Point(6, 19);
             this.cmbNationality.Name = "cmbNationality";
@@ -396,6 +409,7 @@
             // cbkGivenName
             // 
             this.cbkGivenName.AutoSize = true;
+            this.cbkGivenName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkGivenName.Location = new System.Drawing.Point(257, 23);
             this.cbkGivenName.Name = "cbkGivenName";
             this.cbkGivenName.Size = new System.Drawing.Size(15, 14);
@@ -424,6 +438,7 @@
             // cbkSurname
             // 
             this.cbkSurname.AutoSize = true;
+            this.cbkSurname.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkSurname.Location = new System.Drawing.Point(257, 23);
             this.cbkSurname.Name = "cbkSurname";
             this.cbkSurname.Size = new System.Drawing.Size(15, 14);
@@ -452,6 +467,7 @@
             // cbkSex
             // 
             this.cbkSex.AutoSize = true;
+            this.cbkSex.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkSex.Location = new System.Drawing.Point(115, 22);
             this.cbkSex.Name = "cbkSex";
             this.cbkSex.Size = new System.Drawing.Size(15, 14);
@@ -460,6 +476,8 @@
             // 
             // cmbSex
             // 
+            this.cmbSex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSex.FormattingEnabled = true;
             this.cmbSex.Location = new System.Drawing.Point(6, 19);
             this.cmbSex.Name = "cmbSex";
@@ -468,6 +486,7 @@
             // 
             // btnGenerate
             // 
+            this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGenerate.Location = new System.Drawing.Point(13, 358);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(278, 23);
@@ -491,6 +510,7 @@
             this.tbIndentityCard.Controls.Add(this.groupBox19);
             this.tbIndentityCard.Controls.Add(this.groupBox20);
             this.tbIndentityCard.Controls.Add(this.btnIdentGenerate);
+            this.tbIndentityCard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tbIndentityCard.Location = new System.Drawing.Point(4, 22);
             this.tbIndentityCard.Name = "tbIndentityCard";
             this.tbIndentityCard.Padding = new System.Windows.Forms.Padding(3);
@@ -499,48 +519,39 @@
             this.tbIndentityCard.Text = "Indentity Card";
             this.tbIndentityCard.UseVisualStyleBackColor = true;
             // 
-            // tbInfo
+            // groupBox21
             // 
-            this.tbInfo.Controls.Add(this.lnkLabel);
-            this.tbInfo.Controls.Add(this.btnInstallFont);
-            this.tbInfo.Controls.Add(this.lblFontMessage);
-            this.tbInfo.Location = new System.Drawing.Point(4, 22);
-            this.tbInfo.Name = "tbInfo";
-            this.tbInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tbInfo.Size = new System.Drawing.Size(550, 416);
-            this.tbInfo.TabIndex = 2;
-            this.tbInfo.Text = "Info";
-            this.tbInfo.UseVisualStyleBackColor = true;
+            this.groupBox21.Controls.Add(this.cbkIdentOptionalTwo);
+            this.groupBox21.Controls.Add(this.txtIdentOptionalTwo);
+            this.groupBox21.Location = new System.Drawing.Point(297, 122);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(241, 52);
+            this.groupBox21.TabIndex = 24;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Optional (Line 2) [11 Alphanum]";
             // 
-            // btnInstallFont
+            // cbkIdentOptionalTwo
             // 
-            this.btnInstallFont.Location = new System.Drawing.Point(3, 42);
-            this.btnInstallFont.Name = "btnInstallFont";
-            this.btnInstallFont.Size = new System.Drawing.Size(75, 23);
-            this.btnInstallFont.TabIndex = 1;
-            this.btnInstallFont.Text = "Install Font";
-            this.btnInstallFont.UseVisualStyleBackColor = true;
-            this.btnInstallFont.Click += new System.EventHandler(this.btnInstallFont_Click);
+            this.cbkIdentOptionalTwo.AutoSize = true;
+            this.cbkIdentOptionalTwo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbkIdentOptionalTwo.Location = new System.Drawing.Point(218, 23);
+            this.cbkIdentOptionalTwo.Name = "cbkIdentOptionalTwo";
+            this.cbkIdentOptionalTwo.Size = new System.Drawing.Size(15, 14);
+            this.cbkIdentOptionalTwo.TabIndex = 13;
+            this.cbkIdentOptionalTwo.UseVisualStyleBackColor = true;
             // 
-            // lblFontMessage
+            // txtIdentOptionalTwo
             // 
-            this.lblFontMessage.AutoSize = true;
-            this.lblFontMessage.Location = new System.Drawing.Point(8, 16);
-            this.lblFontMessage.Name = "lblFontMessage";
-            this.lblFontMessage.Size = new System.Drawing.Size(0, 13);
-            this.lblFontMessage.TabIndex = 0;
-            // 
-            // rtbMRZ
-            // 
-            this.rtbMRZ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbMRZ.Location = new System.Drawing.Point(0, 0);
-            this.rtbMRZ.Name = "rtbMRZ";
-            this.rtbMRZ.Size = new System.Drawing.Size(558, 130);
-            this.rtbMRZ.TabIndex = 0;
-            this.rtbMRZ.Text = "";
+            this.txtIdentOptionalTwo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtIdentOptionalTwo.Location = new System.Drawing.Point(7, 20);
+            this.txtIdentOptionalTwo.MaxLength = 11;
+            this.txtIdentOptionalTwo.Name = "txtIdentOptionalTwo";
+            this.txtIdentOptionalTwo.Size = new System.Drawing.Size(205, 20);
+            this.txtIdentOptionalTwo.TabIndex = 0;
             // 
             // btnIdentGenerateRandom
             // 
+            this.btnIdentGenerateRandom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIdentGenerateRandom.Location = new System.Drawing.Point(13, 387);
             this.btnIdentGenerateRandom.Name = "btnIdentGenerateRandom";
             this.btnIdentGenerateRandom.Size = new System.Drawing.Size(278, 23);
@@ -563,6 +574,7 @@
             // cbkIdentOptionalOne
             // 
             this.cbkIdentOptionalOne.AutoSize = true;
+            this.cbkIdentOptionalOne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentOptionalOne.Location = new System.Drawing.Point(218, 23);
             this.cbkIdentOptionalOne.Name = "cbkIdentOptionalOne";
             this.cbkIdentOptionalOne.Size = new System.Drawing.Size(15, 14);
@@ -592,6 +604,7 @@
             // cbkIdentDOE
             // 
             this.cbkIdentDOE.AutoSize = true;
+            this.cbkIdentDOE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentDOE.Location = new System.Drawing.Point(257, 25);
             this.cbkIdentDOE.Name = "cbkIdentDOE";
             this.cbkIdentDOE.Size = new System.Drawing.Size(15, 14);
@@ -600,6 +613,7 @@
             // 
             // dtpIdentDOE
             // 
+            this.dtpIdentDOE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpIdentDOE.Location = new System.Drawing.Point(7, 19);
             this.dtpIdentDOE.Name = "dtpIdentDOE";
             this.dtpIdentDOE.Size = new System.Drawing.Size(244, 20);
@@ -619,6 +633,7 @@
             // cbkIdentDocNum
             // 
             this.cbkIdentDocNum.AutoSize = true;
+            this.cbkIdentDocNum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentDocNum.Location = new System.Drawing.Point(220, 23);
             this.cbkIdentDocNum.Name = "cbkIdentDocNum";
             this.cbkIdentDocNum.Size = new System.Drawing.Size(15, 14);
@@ -647,6 +662,7 @@
             // cbkIdentIssuer
             // 
             this.cbkIdentIssuer.AutoSize = true;
+            this.cbkIdentIssuer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentIssuer.Location = new System.Drawing.Point(115, 23);
             this.cbkIdentIssuer.Name = "cbkIdentIssuer";
             this.cbkIdentIssuer.Size = new System.Drawing.Size(15, 14);
@@ -655,6 +671,8 @@
             // 
             // cmbIdentIssuer
             // 
+            this.cmbIdentIssuer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbIdentIssuer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIdentIssuer.FormattingEnabled = true;
             this.cmbIdentIssuer.Location = new System.Drawing.Point(6, 19);
             this.cmbIdentIssuer.Name = "cmbIdentIssuer";
@@ -695,6 +713,7 @@
             // cbIdentkDOB
             // 
             this.cbIdentkDOB.AutoSize = true;
+            this.cbIdentkDOB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbIdentkDOB.Location = new System.Drawing.Point(257, 25);
             this.cbIdentkDOB.Name = "cbIdentkDOB";
             this.cbIdentkDOB.Size = new System.Drawing.Size(15, 14);
@@ -703,6 +722,7 @@
             // 
             // dtpIdentDOB
             // 
+            this.dtpIdentDOB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpIdentDOB.Location = new System.Drawing.Point(7, 19);
             this.dtpIdentDOB.Name = "dtpIdentDOB";
             this.dtpIdentDOB.Size = new System.Drawing.Size(244, 20);
@@ -722,6 +742,7 @@
             // cbkIdentNationality
             // 
             this.cbkIdentNationality.AutoSize = true;
+            this.cbkIdentNationality.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentNationality.Location = new System.Drawing.Point(115, 22);
             this.cbkIdentNationality.Name = "cbkIdentNationality";
             this.cbkIdentNationality.Size = new System.Drawing.Size(15, 14);
@@ -730,6 +751,8 @@
             // 
             // cmbIdentNationality
             // 
+            this.cmbIdentNationality.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbIdentNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIdentNationality.FormattingEnabled = true;
             this.cmbIdentNationality.Location = new System.Drawing.Point(6, 19);
             this.cmbIdentNationality.Name = "cmbIdentNationality";
@@ -750,6 +773,7 @@
             // cbkIdentGivenName
             // 
             this.cbkIdentGivenName.AutoSize = true;
+            this.cbkIdentGivenName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentGivenName.Location = new System.Drawing.Point(257, 23);
             this.cbkIdentGivenName.Name = "cbkIdentGivenName";
             this.cbkIdentGivenName.Size = new System.Drawing.Size(15, 14);
@@ -778,6 +802,7 @@
             // cbkIdentSurname
             // 
             this.cbkIdentSurname.AutoSize = true;
+            this.cbkIdentSurname.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentSurname.Location = new System.Drawing.Point(257, 23);
             this.cbkIdentSurname.Name = "cbkIdentSurname";
             this.cbkIdentSurname.Size = new System.Drawing.Size(15, 14);
@@ -806,6 +831,7 @@
             // cbkIdentSex
             // 
             this.cbkIdentSex.AutoSize = true;
+            this.cbkIdentSex.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbkIdentSex.Location = new System.Drawing.Point(115, 22);
             this.cbkIdentSex.Name = "cbkIdentSex";
             this.cbkIdentSex.Size = new System.Drawing.Size(15, 14);
@@ -814,6 +840,8 @@
             // 
             // cmbIdentSex
             // 
+            this.cmbIdentSex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbIdentSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIdentSex.FormattingEnabled = true;
             this.cmbIdentSex.Location = new System.Drawing.Point(6, 19);
             this.cmbIdentSex.Name = "cmbIdentSex";
@@ -822,6 +850,7 @@
             // 
             // btnIdentGenerate
             // 
+            this.btnIdentGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIdentGenerate.Location = new System.Drawing.Point(13, 358);
             this.btnIdentGenerate.Name = "btnIdentGenerate";
             this.btnIdentGenerate.Size = new System.Drawing.Size(278, 23);
@@ -830,38 +859,23 @@
             this.btnIdentGenerate.UseVisualStyleBackColor = true;
             this.btnIdentGenerate.Click += new System.EventHandler(this.btnIdentGenerate_Click);
             // 
-            // groupBox21
+            // tbInfo
             // 
-            this.groupBox21.Controls.Add(this.cbkIdentOptionalTwo);
-            this.groupBox21.Controls.Add(this.txtIdentOptionalTwo);
-            this.groupBox21.Location = new System.Drawing.Point(297, 122);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(241, 52);
-            this.groupBox21.TabIndex = 24;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Optional (Line 2) [11 Alphanum]";
-            // 
-            // cbkIdentOptionalTwo
-            // 
-            this.cbkIdentOptionalTwo.AutoSize = true;
-            this.cbkIdentOptionalTwo.Location = new System.Drawing.Point(218, 23);
-            this.cbkIdentOptionalTwo.Name = "cbkIdentOptionalTwo";
-            this.cbkIdentOptionalTwo.Size = new System.Drawing.Size(15, 14);
-            this.cbkIdentOptionalTwo.TabIndex = 13;
-            this.cbkIdentOptionalTwo.UseVisualStyleBackColor = true;
-            // 
-            // txtIdentOptionalTwo
-            // 
-            this.txtIdentOptionalTwo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtIdentOptionalTwo.Location = new System.Drawing.Point(7, 20);
-            this.txtIdentOptionalTwo.MaxLength = 11;
-            this.txtIdentOptionalTwo.Name = "txtIdentOptionalTwo";
-            this.txtIdentOptionalTwo.Size = new System.Drawing.Size(205, 20);
-            this.txtIdentOptionalTwo.TabIndex = 0;
+            this.tbInfo.Controls.Add(this.lnkLabel);
+            this.tbInfo.Controls.Add(this.btnInstallFont);
+            this.tbInfo.Controls.Add(this.lblFontMessage);
+            this.tbInfo.Location = new System.Drawing.Point(4, 22);
+            this.tbInfo.Name = "tbInfo";
+            this.tbInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tbInfo.Size = new System.Drawing.Size(550, 416);
+            this.tbInfo.TabIndex = 2;
+            this.tbInfo.Text = "Info";
+            this.tbInfo.UseVisualStyleBackColor = true;
             // 
             // lnkLabel
             // 
             this.lnkLabel.AutoSize = true;
+            this.lnkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lnkLabel.Location = new System.Drawing.Point(7, 72);
             this.lnkLabel.Name = "lnkLabel";
             this.lnkLabel.Size = new System.Drawing.Size(274, 13);
@@ -869,6 +883,34 @@
             this.lnkLabel.TabStop = true;
             this.lnkLabel.Text = "http://en.wikipedia.org/wiki/Machine-readable_passport\r\n";
             this.lnkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLabel_LinkClicked);
+            // 
+            // btnInstallFont
+            // 
+            this.btnInstallFont.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInstallFont.Location = new System.Drawing.Point(3, 42);
+            this.btnInstallFont.Name = "btnInstallFont";
+            this.btnInstallFont.Size = new System.Drawing.Size(75, 23);
+            this.btnInstallFont.TabIndex = 1;
+            this.btnInstallFont.Text = "Install Font";
+            this.btnInstallFont.UseVisualStyleBackColor = true;
+            this.btnInstallFont.Click += new System.EventHandler(this.btnInstallFont_Click);
+            // 
+            // lblFontMessage
+            // 
+            this.lblFontMessage.AutoSize = true;
+            this.lblFontMessage.Location = new System.Drawing.Point(8, 16);
+            this.lblFontMessage.Name = "lblFontMessage";
+            this.lblFontMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblFontMessage.TabIndex = 0;
+            // 
+            // rtbMRZ
+            // 
+            this.rtbMRZ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbMRZ.Location = new System.Drawing.Point(0, 0);
+            this.rtbMRZ.Name = "rtbMRZ";
+            this.rtbMRZ.Size = new System.Drawing.Size(558, 130);
+            this.rtbMRZ.TabIndex = 0;
+            this.rtbMRZ.Text = "";
             // 
             // Form1
             // 
@@ -908,8 +950,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tbIndentityCard.ResumeLayout(false);
-            this.tbInfo.ResumeLayout(false);
-            this.tbInfo.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -930,8 +972,8 @@
             this.groupBox19.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
+            this.tbInfo.ResumeLayout(false);
+            this.tbInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }

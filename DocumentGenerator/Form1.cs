@@ -18,9 +18,9 @@ namespace DocumentGenerator
     {
         List<string> _givenNamesList = new List<string>();
         List<string> _surNamesList = new List<string>();
-        static Random rnd = new Random();
-        static string _pathToFont = Environment.CurrentDirectory + @"\Fonts\OCR-B 10 BT.ttf";
-        static string _pathToNames = Environment.CurrentDirectory + @"\data\names.xml";
+        static readonly Random rnd = new Random();
+        static readonly string _pathToFont = Environment.CurrentDirectory + @"\Fonts\OCR-B 10 BT.ttf";
+        static readonly string _pathToNames = Environment.CurrentDirectory + @"\data\names.xml";
         public Form1()
         {
             InitializeComponent();
@@ -96,14 +96,11 @@ namespace DocumentGenerator
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            DocumentBase.CountryCode nationality;
-            Enum.TryParse<DocumentBase.CountryCode>(cmbNationality.SelectedValue.ToString(), out nationality);
+            Enum.TryParse<DocumentBase.CountryCode>(cmbNationality.SelectedValue.ToString(), out DocumentBase.CountryCode nationality);
 
-            DocumentBase.CountryCode issuer;
-            Enum.TryParse<DocumentBase.CountryCode>(cmbIssuer.SelectedValue.ToString(), out issuer);
+            Enum.TryParse<DocumentBase.CountryCode>(cmbIssuer.SelectedValue.ToString(), out DocumentBase.CountryCode issuer);
 
-            DocumentBase.SexCode sex;
-            Enum.TryParse<DocumentBase.SexCode>(cmbSex.SelectedValue.ToString(), out sex);
+            Enum.TryParse<DocumentBase.SexCode>(cmbSex.SelectedValue.ToString(), out DocumentBase.SexCode sex);
 
             PassportModel tmp = new PassportModel(
                 nationality,
@@ -125,7 +122,6 @@ namespace DocumentGenerator
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-
             txtSurname.Text = !cbkSurname.Checked ? _surNamesList[rnd.Next(_surNamesList.Count)] : txtSurname.Text;
             txtGivenName.Text = !cbkGivenName.Checked ? (_givenNamesList[rnd.Next(_givenNamesList.Count)] + " " + _givenNamesList[rnd.Next(_givenNamesList.Count)]) : txtGivenName.Text;
             cmbIssuer.SelectedIndex = !cbkIssuer.Checked ? rnd.Next(cmbIssuer.Items.Count) : cmbIssuer.SelectedIndex;
@@ -208,17 +204,12 @@ namespace DocumentGenerator
 
         private void btnIdentGenerate_Click(object sender, EventArgs e)
         {
-            DocumentBase.CountryCode nationality;
-            Enum.TryParse<DocumentBase.CountryCode>(cmbIdentNationality.SelectedValue.ToString(), out nationality);
+            Enum.TryParse<DocumentBase.CountryCode>(cmbIdentNationality.SelectedValue.ToString(), out DocumentBase.CountryCode nationality);
 
-            DocumentBase.CountryCode issuer;
-            Enum.TryParse<DocumentBase.CountryCode>(cmbIdentIssuer.SelectedValue.ToString(), out issuer);
+            Enum.TryParse<DocumentBase.CountryCode>(cmbIdentIssuer.SelectedValue.ToString(), out DocumentBase.CountryCode issuer);
 
-            DocumentBase.SexCode sex;
-            Enum.TryParse<DocumentBase.SexCode>(cmbIdentSex.SelectedValue.ToString(), out sex);
+            Enum.TryParse<DocumentBase.SexCode>(cmbIdentSex.SelectedValue.ToString(), out DocumentBase.SexCode sex);
 
-            
-            
             IdentityDocumentModel tmp = new IdentityDocumentModel(
 				issuer,
                 charRemap(txtIdentSurname.Text.Replace(' ', '<')),

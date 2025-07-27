@@ -77,7 +77,7 @@ namespace DocumentGenerator
             tmpText.AppendLine(string.Join("\n", vm.MRZ));
             string text = tmpText.ToString();
 
-            XFont font2 = new XFont("Times New Roman", 10, XFontStyle.Bold);
+            //XFont font2 = new XFont("Times New Roman", 10, XFontStyle.Bold);
             XTextFormatter tf = new XTextFormatter(gfx);
 
             XRect rect = new XRect(widthMargin, XUnit.FromMillimeter(62) + heightMargin, 250, XUnit.FromMillimeter(62) + heightMargin+ 220);
